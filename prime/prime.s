@@ -32,11 +32,10 @@ true:
     mov eax, 1
     leave
     ret
-
 main:
     push rbp
     mov rbp, rsp
-    sub rsp, 8
+    sub rsp, 4
     mov DWORD PTR [rbp - 4], 1
 loop:
     cmp DWORD PTR [rbp - 4], 100
